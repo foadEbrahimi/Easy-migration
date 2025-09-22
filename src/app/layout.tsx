@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { peyda } from '@/font';
 import './globals.css';
 
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+
 export const metadata: Metadata = {
   title: {
     default: 'پرستارشو | مهاجرت و فرصت‌های شغلی پرستاران',
@@ -40,7 +43,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='fa' dir='rtl'>
-      <body className={`antialiased ${peyda.className}`}>{children}</body>
+      <body className={`antialiased ${peyda.className}`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
