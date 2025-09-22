@@ -1,1 +1,74 @@
 @import 'tailwindcss';
+
+.listItem {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.listItem::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 141, 255, 1);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+.listItem:hover {
+  color: rgba(0, 141, 255, 1);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.listItem:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  width: 100%;
+}
+
+.listItem:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.sidebaeItem {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-bottom: 2px;
+}
+
+.sidebaeItem::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 141, 255, 1);
+  bottom: 0;
+  right: 0;
+  transform-origin: right;
+  transition: all 0.3s ease;
+}
+
+.sidebaeItem:hover {
+  color: rgba(0, 141, 255, 1);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.sidebaeItem:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.sidebaeItem img {
+  transition: transform 0.3s ease;
+}
+
+.sidebaeItem:hover img {
+  transform: translateX(5px) rotate(15deg);
+}
