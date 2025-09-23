@@ -30,7 +30,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className='bg-[#008DFF] md:rounded-t-[45px] p-5 pb-4 md:mx-4'>
+    <footer className='bg-primary md:rounded-t-[45px] p-5 pb-4 md:mx-4'>
       {/* لوگو */}
       <div className='flex items-center gap-2 justify-center'>
         <Image src={logo} alt='logo' className='w-12 lg:w-16' />
@@ -43,8 +43,10 @@ export default function Footer() {
         {/* دسترسی سریع */}
         <div className='md:order-1'>
           <div className='flex flex-col mt-11 md:flex-row md:justify-center items-start gap-5 lg:gap-12 mb-8'>
-            <span className='font-bold text-white text-xl'>دسترسی سریع</span>
-            <ul className='flex flex-wrap justify-center md:justify-start gap-6 lg:gap-14 text-[#DEDEDE] font-medium'>
+            <span className='font-bold text-white text-headers-h5'>
+              دسترسی سریع
+            </span>
+            <ul className='flex flex-wrap justify-center text-body-4 md:justify-start gap-6 lg:gap-14 text-[#DEDEDE] font-medium'>
               {quickLinks.map(link => (
                 <li
                   key={link.id}
@@ -96,7 +98,7 @@ export default function Footer() {
       </div>
 
       {/* کپی‌رایت */}
-      <span className='font-medium text-white flex justify-center mt-5 text-sm md:text-base hover:text-[#f6cb32] transition-colors duration-300'>
+      <span className='font-medium text-white flex justify-center mt-5 text-body-4 md:text-base hover:text-[#f6cb32] transition-colors duration-300'>
         طراحی رابط کاربری توسط امید مرمزی ©
       </span>
     </footer>
@@ -135,8 +137,10 @@ function ContactBlock({
 }) {
   return (
     <div className='flex flex-col gap-4 items-center md:items-center'>
-      <span className='text-xl font-bold text-white'>{title}</span>
-      <span className='font-medium text-white'>{value}</span>
+      <span className='text-headers-h5 font-bold text-white'>{title}</span>
+      <span className='font-medium text-body-4 lg:text-body-3 text-white'>
+        {value}
+      </span>
       {icon && (
         <div className='w-10 h-10 bg-white rounded-full flex items-center justify-center'>
           <Image src={icon} alt={title} className='w-5 h-5' />

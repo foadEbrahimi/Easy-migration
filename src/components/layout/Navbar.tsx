@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className='bg-blue-500 rounded-full w-9 h-9 xl:w-11 xl:h-11 flex items-center justify-center'>
           <Image src={phone} alt='phone' />
         </div>
-        <span className='font-medium text-sm'>
+        <span className='font-medium text-button-btn-3'>
           برای مشاوره تماس بگیرید
           <br />
           021123456789
