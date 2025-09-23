@@ -7,13 +7,66 @@
 }
 @theme {
   --font-diba: 'diba';
+  --color-primary: rgba(15, 145, 244, 1);
+  --color-secondary: rgba(0, 101, 181, 1);
+  --color-white: rgba(244, 245, 247, 1);
+  --color-black: rgba(44, 47, 54, 1);
+  --color-bg-white: rgba(255, 255, 255, 1);
+  --color-bg-gray: rgba(246, 246, 246, 1);
+  --color-states-error: rgba(195, 0, 0, 1);
+  --color-states-error1: rgba(237, 46, 46, 1);
+  --color-states-success: rgba(0, 150, 109, 1);
+  --color-states-success1: rgba(0, 186, 136, 1);
+  --color-states-warning: rgba(169, 121, 28, 1);
+  --color-states-warning1: rgba(244, 183, 64, 1);
+  --color-shade-1: rgba(10, 88, 202, 1);
+  --color-shade-2: rgba(8, 66, 152, 1);
+  --color-shade-3: rgba(5, 44, 101, 1);
+  --color-shade-4: rgba(4, 33, 76, 1);
+  --color-shade-5: rgba(3, 22, 51, 1);
+  --color-shade-6: rgba(1, 11, 25, 1);
+  --color-shade-7: rgba(0, 0, 0, 1);
+  --text-b-6: 0.75rem;
+  --text-weight-b-6: 400;
+  --text-displays-display: 3.5rem;
+  --text-weight-displays-display: 700;
+  --text-headers-h1: 2.75rem;
+  --text-weight-headers-h1: 700;
+  --text-headers-h2: 2.5rem;
+  --text-weight-headers-h2: 700;
+  --text-headers-h3: 2rem;
+  --text-weight-headers-h3: 700;
+  --text-headers-h4: 1.5rem;
+  --text-weight-headers-h4: 700;
+  --text-line-height-headers-h4: 2.5rem;
+  --text-headers-h5: 1.25rem;
+  --text-weight-headers-h5: 700;
+  --text-body-3: 1.125rem;
+  --text-weight-body-3: 500;
+  --text-body: 1.5rem;
+  --text-weight-body: 500;
+  --text-line-height-body: 2.8125rem;
+  --text-body-2: 1.25rem;
+  --text-weight-body-2: 100;
+  --text-body-4: 1rem;
+  --text-weight-body-4: 500;
+  --text-body-5: 0.875rem;
+  --text-weight-body-5: 400;
+  --text-button-btn: 1.125rem;
+  --text-weight-button-btn: 500;
+  --text-button-btn-2: 1rem;
+  --text-weight-button-btn-2: 500;
+  --text-button-btn-3: 0.875rem;
+  --text-weight-button-btn-3: 500;
+  --text-button-btn4: 0.875rem;
+  --text-weight-button-btn4: 400;
+  --text-family-peyda: 'Peyda';
 }
 .listItem {
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
   padding-bottom: 4px;
-  font-weight: 500;
 }
 
 .listItem::after {
