@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className='bg-[#008DFF] md:rounded-t-[45px] p-5 pb-4 md:mx-4'>
       {/* لوگو */}
-      <div className='flex items-center gap-2 justify-center mb-6'>
+      <div className='flex items-center gap-2 justify-center'>
         <Image src={logo} alt='logo' className='w-12 lg:w-16' />
         <span className='text-2xl font-diba text-white'>
           مهاجرت <span className='text-[#f6cb32]'>آسان</span>
