@@ -35,7 +35,7 @@ export default function SideMenu() {
         <div className='p-4 flex items-center justify-between'>
           <div className='flex items-center gap-2'>
             <Image src={logo} alt='logo' className='w-12 lg:w-16' />
-            <span className='lg:text-2xl font-medium'>
+            <span className='font-diba'>
               <span className='text-blue-500'>مهاجرت</span> آسان
             </span>
           </div>
@@ -43,16 +43,16 @@ export default function SideMenu() {
 
         <div className='px-5 py-3 pt-10 flex flex-col h-[calc(100%-5rem)]'>
           <ul className='space-y-10 text-lg'>
-            <li className='flex items-center text-xl font-semibold w-full sidebaeItem justify-between'>
+            <li className='flex items-center text-body-2 font-semibold font-semibold w-full sidebaeItem justify-between'>
               صفحه اصلی <Image src={chevronLeft} alt='chevronLeft' />
             </li>
-            <li className='flex items-center text-xl font-semibold w-full sidebaeItem justify-between'>
+            <li className='flex items-center text-body-2 font-semibold font-semibold w-full sidebaeItem justify-between'>
               درباره ما <Image src={chevronLeft} alt='chevronLeft' />
             </li>
-            <li className='flex items-center text-xl font-semibold w-full sidebaeItem justify-between'>
+            <li className='flex items-center text-body-2 font-semibold font-semibold w-full sidebaeItem justify-between'>
               خدمات <Image src={chevronLeft} alt='chevronLeft' />
             </li>
-            <li className='flex items-center text-xl font-semibold w-full sidebaeItem justify-between'>
+            <li className='flex items-center text-body-2 font-semibold font-semibold w-full sidebaeItem justify-between'>
               تماس با ما <Image src={chevronLeft} alt='chevronLeft' />
             </li>
           </ul>
