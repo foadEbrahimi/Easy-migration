@@ -17,15 +17,15 @@ export default function Navbar() {
       {/* لوگو */}
       <div className='flex items-center gap-1'>
         <Image src={logo} alt='logo' className='w-12 lg:w-16' />
-        <span className='lg:text-2xl font-medium'>
-          <span className='text-blue-500'>مهاجرت</span> آسان
+        <span className='lg:text-2xl font-medium font-diba'>
+          <span className='text-primary'>مهاجرت</span> آسان
         </span>
       </div>
 
       {/* لینک‌ها */}
       <ul className='hidden md:flex items-center gap-11'>
         {links.map(link => (
-          <li key={link.id} className='listItem lg:text-xl'>
+          <li key={link.id} className='listItem !text-body-2 font-semibold'>
             {link.label}
           </li>
         ))}
