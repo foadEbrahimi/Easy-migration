@@ -5,9 +5,11 @@ import shape from '../../../public/images/hero/shape.png';
 import polygon from '../../../public/images/hero/polygon.svg';
 import Icon from '../../../public/images/hero/Icon.svg';
 
+import YellowLine from '../ui/YellowLine';
+
 export default function Hero() {
   return (
-    <section className='relative max-w-6xl 2xl:max-w-7xl mx-auto mb-40 py-5 lg:mt-10 lg:pr-5 md:rounded-r-4xl bg-primary'>
+    <section className='relative max-w-6xl 2xl:max-w-7xl mx-auto py-5 lg:mt-10 lg:pr-5 md:rounded-r-4xl bg-primary'>
       <div className='flex flex-col md:flex-row items-center justify-between h-full'>
         {/* تصویر سمت راست */}
         <div className='relative flex-1 md:order-2'>
@@ -40,10 +42,7 @@ export default function Hero() {
           </h2>
 
           {/* خط زرد */}
-          <div className='flex items-center gap-2'>
-            <span className='bg-[#f6cb32] w-28 h-1 rounded-full' />
-            <span className='bg-[#f6cb32] w-1.5 h-1 rounded-full' />
-          </div>
+          <YellowLine />
 
           {/* توضیحات */}
           <div className='flex items-center gap-3 mt-3'>
