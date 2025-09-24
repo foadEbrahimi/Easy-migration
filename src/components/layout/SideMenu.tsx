@@ -22,7 +22,7 @@ export default function SideMenu() {
 
       {showSide && (
         <div
-          className='fixed inset-0 bg-black/50 z-20 transition-opacity'
+          className='fixed inset-0 bg-black/50 z-30 transition-opacity'
           onClick={close}
         ></div>
       )}
