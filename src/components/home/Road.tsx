@@ -27,8 +27,10 @@ function RoadStep({
   extra?: any;
 }) {
   return (
-    <div className='relative flex flex-col items-center justify-center bg-white border border-[#AFAFAF] rounded-full
-    w-44 h-44 md:w-[200px] md:h-[200px] lg:w-[232px] lg:h-[232px] text-center p-4'>
+    <div
+      className='relative flex flex-col items-center justify-center bg-white border border-[#afafaf3b] rounded-full
+    w-44 h-44 md:w-[200px] md:h-[200px] lg:w-[232px] lg:h-[232px] text-center p-4'
+    >
       {/* خط تزئینی */}
       {decoration && (
         <Image
