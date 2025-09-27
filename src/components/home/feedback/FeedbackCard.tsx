@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dotSvg from '../../../public/images/feedback/dot.svg';
+import dotSvg from '../../../../public/images/feedback/dot.svg';
 
 export default function FeedbackCard() {
   return (

@@ -1,11 +1,11 @@
-import YellowLine from '../ui/YellowLine';
+import YellowLine from '../../ui/YellowLine';
 
 import FeedbackSlider from './FeedbackSlider';
 import FeedbackCard from './FeedbackCard';
 
 export default function FeedBack() {
   return (
-    <div className='my-12 md:my-32 px-5 py-8 max-w-6xl 2xl:max-w-7xl mx-auto pb-10'>
+    <section className='my-12 md:my-20 px-5 py-8 max-w-6xl 2xl:max-w-7xl mx-auto pb-10'>
       <div className='md:flex md:flex-row gap-20 w-full'>
         <div className='md:!max-w-[23rem] !flex-1'>
           <span className='text-body-5 text-[#828282] font-medium'>
@@ -24,6 +24,6 @@ export default function FeedBack() {
           </FeedbackSlider>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

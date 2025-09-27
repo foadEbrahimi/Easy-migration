@@ -1,4 +1,4 @@
-import YellowLine from '../ui/YellowLine';
+import YellowLine from '../../ui/YellowLine';
 import ServiceCard from './ServiceCard';
 
 export default function Services() {

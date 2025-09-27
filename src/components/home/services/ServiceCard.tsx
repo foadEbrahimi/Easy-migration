@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import cart from '../../../public/images/services/cart.png';
-import polygon1 from '../../../public/images/services/polygon1.svg';
-import polygon2 from '../../../public/images/services/polygon2.svg';
+import cart from '../../../../public/images/services/cart.png';
+import polygon1 from '../../../../public/images/services/polygon1.svg';
+import polygon2 from '../../../../public/images/services/polygon2.svg';
 
 export default function ServiceCard() {
   return (
