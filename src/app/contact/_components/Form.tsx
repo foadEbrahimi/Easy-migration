@@ -13,7 +13,7 @@ export default function Form() {
             <input
               id='phoneNumber'
               placeholder='شماره تماس'
-              className='border outline-none focus:ring-primary focus:ring-2 border-[#DCDCDC] rounded-lg w-full placeholder:text-body-5 placeholder:text-[#959090] p-4 placeholder:font-medium'
+              className='border font-sans outline-none focus:ring-primary focus:ring-2 border-[#DCDCDC] rounded-lg w-full placeholder:text-body-5 placeholder:text-[#959090] p-4 placeholder:font-medium'
               type='number'
               inputMode='numeric'
             />
