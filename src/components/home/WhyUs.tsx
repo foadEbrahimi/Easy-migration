@@ -2,14 +2,18 @@ import Image from 'next/image';
 
 import YellowLine from '../ui/YellowLine';
 
-import ring from '../../../public/images/whyus/ring.svg';
-import bg from '../../../public/images/whyus/img.png';
+import ring from '../../../public/images/landing/whyus/ring.svg';
+import bg from '../../../public/images/landing/whyus/img.png';
 
-export default function WhyUs() {
+export default function WhyUs({ about }: { about: boolean }) {
   return (
     <section className='max-w-6xl my-10 2xl:max-w-7xl mx-auto px-5 py-8'>
-      <div className='flex flex-col gap-12 lg:gap-20 md:flex-row '>
-        <div className='md:flex-1 flex flex-col md:justify-center md:gap-10 md:order-2'>
+      <div
+        className={`flex flex-col gap-12 lg:gap-20 ${
+          about ? 'md:flex-row' : 'md:flex-row-reverse'
+        }`}
+      >
+        <div className='md:flex-1 flex flex-col md:justify-center md:gap-10'>
           <div>
             <span className='text-body-5 font-medium'>
               همراه و همسیر با شما
@@ -51,7 +55,7 @@ export default function WhyUs() {
             </div>
           </div>
         </div>
-        <div className='relative md:flex-1 md:max-w-sm md:order-1 w-[80%] mx-auto'>
+        <div className='relative md:flex-1 md:max-w-sm w-[80%] mx-auto'>
           <Image src={bg} alt='bg' className='rounded-4xl' />
           <div className='bg-gradient-to-b absolute top-2 -z-10 -right-4 rounded-4xl from-[#0F91F4] to-[#09548E] w-full h-full' />
         </div>
