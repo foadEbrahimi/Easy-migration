@@ -219,3 +219,16 @@
 .delay-200 {
   animation-delay: 0.2s;
 }
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+#about-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('../../public/images/about/aboutBg.png') center/cover no-repeat;
+}
+
+#contact-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('../../public/images/contact/contactBg.png') center/cover no-repeat;
+}
