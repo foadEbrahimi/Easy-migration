@@ -36,22 +36,25 @@ const features = [
 
 export default function WhyGerman() {
   return (
-    <section className='max-w-6xl 2xl:max-w-7xl mx-auto my-20 px-5'>
-      <div className='flex flex-col md:flex-row gap-11 md:gap-32 md:items-start md:justify-between'>
+    <section className='mx-auto my-20 max-w-6xl px-5 2xl:max-w-7xl'>
+      <div className='flex flex-col gap-11 md:flex-row md:items-start md:justify-between md:gap-32'>
         {/* متن سمت چپ */}
-        <div className='flex-1'>
-          <h2 className='text-headers-h5 lg:text-headers-h3 font-bold mb-3'>
+        <div className='flex-1 animate-fadeInUp'>
+          <h2 className='mb-3 text-headers-h5 font-bold lg:text-headers-h3'>
             چرا آلمان را برای مهاجرت انتخاب کنیم؟
           </h2>
           <YellowLine />
 
-          <ul className='grid grid-cols-2 gap-y-6 mt-5'>
+          <ul className='mt-5 grid grid-cols-2 gap-y-6'>
             {features.map(feature => (
-              <li key={feature.id} className='flex flex-col gap-3'>
-                <div className='flex items-center justify-center w-14 h-14 rounded-full bg-[#008DFF]'>
+              <li
+                key={feature.id}
+                className='flex flex-col gap-3 transition-transform duration-300 hover:scale-105'
+              >
+                <div className='flex h-14 w-14 items-center justify-center rounded-full bg-[#008DFF] shadow-md shadow-blue-200'>
                   <Image src={feature.icon} alt={feature.alt} />
                 </div>
-                <span className='font-medium text-body-5 lg:text-body'>
+                <span className='text-body-5 font-medium lg:text-body'>
                   {feature.text}
                 </span>
               </li>
@@ -60,23 +63,23 @@ export default function WhyGerman() {
         </div>
 
         {/* تصویر سمت راست */}
-        <div className='flex-1'>
+        <div className='flex-1 animate-fadeInRight delay-200'>
           <div className='relative w-fit'>
             {/* تصویر اصلی */}
-            <div className='relative'>
+            <div className='relative overflow-hidden rounded-b-4xl'>
               <Image
                 src={germanPhoto}
                 alt='تصویر شهری از آلمان'
-                className='rounded-b-4xl'
+                className='transition-transform duration-700 hover:scale-105'
               />
-              <div className='absolute top-5 md:top-14 -left-2 md:-left-10 -z-10 w-full h-full rounded-4xl bg-gradient-to-b from-[#008DFF] to-[#005599]' />
+              <div className='absolute -left-2 top-5 h-full w-full -z-10 rounded-4xl bg-gradient-to-b from-[#008DFF] to-[#005599] md:-left-10 md:top-14' />
             </div>
 
             {/* باکس آمار */}
-            <div className='absolute -bottom-7 lg:-bottom-20 left-2 lg:left-0 z-20 flex items-center gap-3 px-3 lg:px-6 py-2 bg-white rounded-2xl shadow shadow-gray-300'>
+            <div className='absolute -bottom-7 left-2 z-20 flex items-center gap-3 rounded-2xl bg-white px-3 py-2 shadow shadow-gray-300 lg:-bottom-20 lg:left-0 lg:px-6'>
               <span
                 dir='ltr'
-                className='font-bold text-headers-h4 lg:text-headers-h3 text-[#F6CB32]'
+                className='text-headers-h4 font-bold text-[#F6CB32] lg:text-headers-h3'
               >
                 +40 K
               </span>
@@ -86,7 +89,7 @@ export default function WhyGerman() {
             </div>
 
             {/* لایه گرادینت روی تصویر */}
-            <div className='absolute top-0 left-0 w-full h-full rounded-4xl bg-gradient-to-b from-[#0064b500] from-55% to-[#008DFF] to-95%' />
+            <div className='absolute top-0 left-0 h-full w-full rounded-4xl bg-gradient-to-b from-[#0064b500] from-55% to-[#008DFF] to-95%' />
           </div>
         </div>
       </div>
