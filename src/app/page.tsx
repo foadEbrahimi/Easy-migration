@@ -1,3 +1,4 @@
+import Vblog from '@/components/home/blog/Vblog';
 import Faq from '@/components/home/faq/Faq';
 import FeedBack from '@/components/home/feedback/FeedBack';
 import Hero from '@/components/home/Hero';
@@ -16,6 +17,7 @@ export default function page() {
       <Road />
       <FeedBack />
       <Faq />
+      <Vblog />
     </div>
   );
 }
