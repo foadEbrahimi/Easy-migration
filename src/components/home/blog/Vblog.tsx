@@ -3,7 +3,7 @@ import VblogCard from './VblogCard';
 
 export default function Vblog() {
   return (
-    <section className='bg-[#AEAEAE]/10'>
+    <section className='bg-[#AEAEAE]/10 my-10 mb-20'>
       <div className='mx-auto max-w-6xl 2xl:max-w-7xl px-5 py-8 pb-10'>
         {/* Header */}
         <div>
