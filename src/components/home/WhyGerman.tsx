@@ -62,20 +62,17 @@ export default function WhyGerman() {
           </ul>
         </div>
 
-        {/* تصویر سمت راست */}
         <div className='flex-1 animate-fadeInRight delay-200'>
           <div className='relative w-fit'>
-            {/* تصویر اصلی */}
             <div className='relative overflow-hidden rounded-b-4xl'>
               <Image
                 src={germanPhoto}
                 alt='تصویر شهری از آلمان'
                 className='transition-transform duration-700 hover:scale-105'
               />
-              <div className='absolute -left-2 top-5 h-full w-full -z-10 rounded-4xl bg-gradient-to-b from-[#008DFF] to-[#005599] md:-left-10 md:top-14' />
             </div>
+            <div className='absolute -left-2 top-5 h-full w-full -z-10 rounded-4xl bg-gradient-to-b from-[#008DFF] to-[#005599] md:-left-10 md:top-14'></div>
 
-            {/* باکس آمار */}
             <div className='absolute -bottom-7 left-2 z-20 flex items-center gap-3 rounded-2xl bg-white px-3 py-2 shadow shadow-gray-300 lg:-bottom-20 lg:left-0 lg:px-6'>
               <span
                 dir='ltr'
@@ -88,8 +85,7 @@ export default function WhyGerman() {
               </span>
             </div>
 
-            {/* لایه گرادینت روی تصویر */}
-            <div className='absolute top-0 left-0 h-full w-full rounded-4xl bg-gradient-to-b from-[#0064b500] from-55% to-[#008DFF] to-95%' />
+            <div className='absolute top-0 left-0 h-full w-full rounded-4xl bg-gradient-to-b from-[#0064b500] from-55% to-[#008DFF] to-95%'></div>
           </div>
         </div>
       </div>
