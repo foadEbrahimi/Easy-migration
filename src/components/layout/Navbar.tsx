@@ -1,15 +1,9 @@
 import Image from 'next/image';
 import logo from '../../../public/images/logo.svg';
 import phone from '../../../public/images/layout/phone.svg';
-import SideMenu from './SideMenu';
 
-const links = [
-  { id: 1, label: 'خانه', href: '/' },
-  { id: 2, label: 'خدمات', href: '/' },
-  { id: 3, label: 'تماس با ما', href: '/' },
-  { id: 4, label: 'درباره ما', href: '/' },
-  { id: 5, label: 'وبلاگ', href: '/' },
-];
+import SideMenu from './SideMenu';
+import Links from '../home/navbar/Links';
 
 export default function Navbar() {
   return (
@@ -23,13 +17,7 @@ export default function Navbar() {
       </div>
 
       {/* لینک‌ها */}
-      <ul className='hidden md:flex items-center gap-11'>
-        {links.map(link => (
-          <li key={link.id} className='listItem !text-body-2 font-semibold'>
-            {link.label}
-          </li>
-        ))}
-      </ul>
+      <Links />
 
       {/* تماس */}
       <div className='hidden md:flex items-center gap-2'>

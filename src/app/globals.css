@@ -95,6 +95,13 @@
 .listItem:active {
   transform: translateY(0) scale(0.98);
 }
+.listItem.active {
+  color: var(--color-primary);
+}
+.listItem.active::after {
+  transform: translateX(-50%) scaleX(1);
+  width: 100%;
+}
 
 .sidebaeItem {
   position: relative;
@@ -136,12 +143,14 @@
 
 #services {
   width: 100%;
-  background: url('../../public/images/landing/services/bg.png') center/cover no-repeat,
+  background: url('../../public/images/landing/services/bg.png') center/cover
+      no-repeat,
     #f8f8f8;
 }
 
 #road-img {
-  background: url('../../public/images/landing/road/roadBg.png') center/cover no-repeat;
+  background: url('../../public/images/landing/road/roadBg.png') center/cover
+    no-repeat;
 }
 
 .dots {
