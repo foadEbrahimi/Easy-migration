@@ -136,12 +136,12 @@
 
 #services {
   width: 100%;
-  background: url('../../public/images/services/bg.png') center/cover no-repeat,
+  background: url('../../public/images/landing/services/bg.png') center/cover no-repeat,
     #f8f8f8;
 }
 
 #road-img {
-  background: url('../../public/images/road/roadBg.png') center/cover no-repeat;
+  background: url('../../public/images/landing/road/roadBg.png') center/cover no-repeat;
 }
 
 .dots {

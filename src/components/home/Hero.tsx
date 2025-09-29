@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import heroBG from '../../../public/images/hero/heroBg.png';
-import shape from '../../../public/images/hero/shape.png';
-import polygon from '../../../public/images/hero/polygon.svg';
-import Icon from '../../../public/images/hero/Icon.svg';
+import heroBG from '../../../public/images/landing/hero/heroBg.png';
+import shape from '../../../public/images/landing/hero/shape.png';
+import polygon from '../../../public/images/landing/hero/polygon.svg';
+import Icon from '../../../public/images/landing/hero/Icon.svg';
 
 import YellowLine from '../ui/YellowLine';
 

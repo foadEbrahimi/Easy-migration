@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import Blog1 from '../../../../public/images/vblog/blog1.png';
-import Polygan from '../../../../public/images/vblog/Polygon 3.svg';
-import Line from '../../../../public/images/vblog/Line.svg';
-import Arrow from '../../../../public/images/vblog/arrow.svg';
+import Blog1 from '../../../../public/images/landing/vblog/blog1.png';
+import Polygan from '../../../../public/images/landing/vblog/Polygon 3.svg';
+import Line from '../../../../public/images/landing/vblog/Line.svg';
+import Arrow from '../../../../public/images/landing/vblog/arrow.svg';
 
 export default function VblogCard() {
   return (
-    <div className='group flex flex-1 items-center h-[12rem] w-fit rounded-md rounded-tr-[50px] shadow-md transition-all duration-300 hover:shadow-xl'>
+    <div className='group flex flex-1 items-center h-[11rem] md:h-[12rem] rounded-md rounded-tr-[50px] shadow-md transition-all duration-300 hover:shadow-xl'>
       {/* Image Section */}
       <div className='relative max-w-[8rem] md:max-w-[12rem]'>
         <div className='h-[11rem] md:h-[12rem] overflow-hidden'>

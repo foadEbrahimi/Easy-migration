@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import cart from '../../../../public/images/services/cart.png';
+import cart from '../../../../public/images/landing/services/cart.png';
 
 export default function ServiceCard() {
   return (

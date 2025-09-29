@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import YellowLine from '../ui/YellowLine';
 
-import shades from '../../../public/images/road/shades.svg';
-import vector1 from '../../../public/images/road/Vector1.svg';
-import vector2 from '../../../public/images/road/Vector2.svg';
-import vector3 from '../../../public/images/road/Vector3.svg';
-import vector4 from '../../../public/images/road/Vector4.svg';
+import shades from '../../../public/images/landing/road/shades.svg';
+import vector1 from '../../../public/images/landing/road/Vector1.svg';
+import vector2 from '../../../public/images/landing/road/Vector2.svg';
+import vector3 from '../../../public/images/landing/road/Vector3.svg';
+import vector4 from '../../../public/images/landing/road/Vector4.svg';
 
-import line1 from '../../../public/images/road/line1.svg';
-import line2 from '../../../public/images/road/line2.svg';
-import airplan from '../../../public/images/road/airplan.svg';
+import line1 from '../../../public/images/landing/road/line1.svg';
+import line2 from '../../../public/images/landing/road/line2.svg';
+import airplan from '../../../public/images/landing/road/airplan.svg';
 
 function RoadStep({
   icon,

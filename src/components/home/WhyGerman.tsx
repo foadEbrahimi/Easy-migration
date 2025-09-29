@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import YellowLine from '../ui/YellowLine';
 
-import dollar from '../../../public/images/whyGerman/dollar.svg';
-import calendar from '../../../public/images/whyGerman/calendar.svg';
-import flower from '../../../public/images/whyGerman/flower.svg';
-import building from '../../../public/images/whyGerman/building.svg';
-import germanPhoto from '../../../public/images/whyGerman/german.png';
+import dollar from '../../../public/images/landing/whyGerman/dollar.svg';
+import calendar from '../../../public/images/landing/whyGerman/calendar.svg';
+import flower from '../../../public/images/landing/whyGerman/flower.svg';
+import building from '../../../public/images/landing/whyGerman/building.svg';
+import germanPhoto from '../../../public/images/landing/whyGerman/german.png';
 
 const features = [
   {
