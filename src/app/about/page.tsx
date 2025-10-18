@@ -11,18 +11,18 @@ export default function page() {
     <div className='mx-auto my-5 max-w-6xl px-5 2xl:max-w-7xl'>
       <div
         id='about-img'
-        className='rounded-2xl h-[170px] md:h-[370px] flex-col w-full p-2 flex items-center justify-center'
+        className='rounded-2xl h-[170px] animate-fadeInUp md:h-[370px] flex-col w-full p-2 flex items-center justify-center'
       >
-        <h1 className='md:text-headers-h2 text-headers-h4 font-bold text-white'>
+        <h1 className='md:text-headers-h2 animate-fadeInUp delay-1000 text-headers-h4 font-bold text-white'>
           درباره ما
         </h1>
         <YellowLine />
-        <span className='md:text-body-4 text-body-5 mt-4 text-white bg-[#FFFFFF]/40 px-5 py-2 rounded-lg'>
+        <span className='md:text-body-4 animate-fadeInUp delay-1000 text-body-5 mt-4 text-white bg-[#FFFFFF]/40 px-5 py-2 rounded-lg'>
           بیش از 25+ سال تجربه
         </span>
       </div>
 
-      <div className='my-10 lg:my-20 flex flex-col md:flex-row items-start gap-5 md:gap-20'>
+      <div className='my-10 lg:my-20 animate-fadeInDown delay-500 duration-1000 flex flex-col md:flex-row items-start gap-5 md:gap-20'>
         <div className='flex-1 md:order-2'>
           <h2 className='text-headers-h5 md:text-headers-h3 font-bold'>
             ما همواره همراه شما هستیم ..
