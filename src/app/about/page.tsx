@@ -6,6 +6,9 @@ import phone from '../../../public/images/layout/phone.svg';
 import pics from '../../../public/images/about/pics.png';
 import WhyUs from '@/components/home/WhyUs';
 
+export const metadata = {
+  title: 'درباره ما',
+};
 export default function page() {
   return (
     <div className='mx-auto my-5 max-w-6xl px-5 2xl:max-w-7xl'>

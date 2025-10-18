@@ -2,6 +2,9 @@ import Image from 'next/image';
 import search from '../../../public/images/blog/search.svg';
 import VblogCard from '@/components/home/blog/VblogCard';
 
+export const metadata = {
+  title: 'وبلاگ',
+};
 export default function page() {
   return (
     <div className='mx-auto my-5 max-w-6xl px-5 2xl:max-w-7xl'>

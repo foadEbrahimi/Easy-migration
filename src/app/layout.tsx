@@ -8,7 +8,7 @@ import Footer from '@/components/layout/Footer';
 export const metadata: Metadata = {
   title: {
     default: 'پرستارشو | مهاجرت و فرصت‌های شغلی پرستاران',
-    template: '%s | پرستارشو',
+    template: 'پرستارشو | %s',
   },
   description:
     'پرستارشو، همراه پرستاران برای مهاجرت کاری به آلمان. معرفی فرصت‌های شغلی، قراردادها و پشتیبانی تخصصی.',

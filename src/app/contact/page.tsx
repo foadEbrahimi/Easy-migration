@@ -1,8 +1,10 @@
-import Image from 'next/image';
-
 import YellowLine from '@/components/ui/YellowLine';
 import Info from './_components/Info';
 import Form from './_components/Form';
+
+export const metadata = {
+  title: 'ارتباط ما',
+};
 
 export default function page() {
   return (
