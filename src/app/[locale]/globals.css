@@ -2,9 +2,10 @@
 
 @font-face {
   font-family: 'diba';
-  src: url('../../public/font/Diba.ttf');
+  src: url('../../../public/font/Diba.ttf');
   font-display: swap;
 }
+
 @theme {
   --font-diba: 'diba';
   --color-primary: rgba(15, 145, 244, 1);
@@ -62,6 +63,7 @@
   --text-weight-button-btn4: 400;
   --text-family-peyda: 'Peyda';
 }
+
 .listItem {
   position: relative;
   cursor: pointer;
@@ -143,13 +145,13 @@
 
 #services {
   width: 100%;
-  background: url('../../public/images/landing/services/bg.png') center/cover
+  background: url('../../../public/images/landing/services/bg.png') center/cover
       no-repeat,
     #f8f8f8;
 }
 
 #road-img {
-  background: url('../../public/images/landing/road/roadBg.png') center/cover
+  background: url('../../../public/images/landing/road/roadBg.png') center/cover
     no-repeat;
 }
 
@@ -247,10 +249,10 @@
 }
 #about-img {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../../public/images/about/aboutBg.png') center/cover no-repeat;
+    url('../../../public/images/about/aboutBg.png') center/cover no-repeat;
 }
 
 #contact-img {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../../public/images/contact/contactBg.png') center/cover no-repeat;
+    url('../../../public/images/contact/contactBg.png') center/cover no-repeat;
 }

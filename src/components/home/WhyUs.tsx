@@ -5,7 +5,7 @@ import YellowLine from '../ui/YellowLine';
 import ring from '../../../public/images/landing/whyus/ring.svg';
 import bg from '../../../public/images/landing/whyus/img.png';
 
-export default function WhyUs({ about }: { about: boolean }) {
+export default function WhyUs({ about = false }: { about: boolean }) {
   return (
     <section className='max-w-6xl my-10 2xl:max-w-7xl mx-auto px-5 py-8'>
       <div

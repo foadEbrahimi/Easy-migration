@@ -13,7 +13,7 @@ export default function page() {
       <Hero />
       <WhyGerman />
       <Services />
-      <WhyUs />
+      <WhyUs about={false} />
       <Road />
       <FeedBack />
       <Faq />
