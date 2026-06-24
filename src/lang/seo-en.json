@@ -1,0 +1,37 @@
+{
+  "layout": {
+    "title": {
+      "default": "ParastarSho | Nursing Migration & Job Opportunities",
+      "template": "ParastarSho | %s"
+    },
+    "description": "ParastarSho helps nurses migrate to Germany for work. We provide job opportunities, contracts, and professional support.",
+    "openGraph": {
+      "title": "ParastarSho | Nursing Migration to Germany",
+      "description": "Simplify your nursing migration to Germany with ParastarSho."
+    },
+    "twitter": {
+      "title": "ParastarSho | Nursing Migration",
+      "description": "Job opportunities and migration services for nurses to Germany"
+    }
+  },
+  "home": {
+    "title": "Home",
+    "description": "ParastarSho helps nurses migrate to Germany for work, study, and travel."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn about ParastarSho's experience and services for nursing migration to Germany."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with ParastarSho for nursing migration consultation and support."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Read the latest articles about nursing migration, visa opportunities, and life in Germany."
+  },
+  "blogDetail": {
+    "title": "Blog Post",
+    "description": "Read this blog post about nursing migration to Germany."
+  }
+}
