@@ -15,7 +15,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 const links = [
   { id: 1, translateSlug: 'home', href: '/' },
-  { id: 2, translateSlug: 'services', href: '/services' },
+  // { id: 2, translateSlug: 'services', href: '/services' },
   { id: 3, translateSlug: 'contact-us', href: '/contact' },
   { id: 4, translateSlug: 'about-us', href: '/about' },
   { id: 5, translateSlug: 'blog', href: '/blog' },
