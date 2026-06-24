@@ -21,6 +21,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogDetailPage({ params }: Props) {
-  const { locale, blogId } = await params;
   return <BlogDetailClient />;
 }

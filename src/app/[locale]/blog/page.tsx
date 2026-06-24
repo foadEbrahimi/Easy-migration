@@ -19,6 +19,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPage({ params }: Props) {
-  const { locale } = await params;
   return <BlogClient />;
 }
