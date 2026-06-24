@@ -6,6 +6,8 @@ import './globals.css';
 
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import LoadingOverlay from '@/components/layout/LoadingOverlay';
+import { LoadingProvider } from '@/contexts/LoadingContext';
 
 import seoEn from '@/lang/seo-en.json';
 import seoFa from '@/lang/seo-fa.json';
@@ -50,11 +52,14 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={locale === 'fa' ? 'rtl' : 'ltr'}>
       <body className={`antialiased ${peyda.className}`}>
-        <NextIntlClientProvider locale={locale}>
-          <Navbar />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <LoadingProvider>
+          <NextIntlClientProvider locale={locale}>
+            <Navbar />
+            {children}
+            <Footer />
+            <LoadingOverlay />
+          </NextIntlClientProvider>
+        </LoadingProvider>
       </body>
     </html>
   );

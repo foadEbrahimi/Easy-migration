@@ -1,5 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import YellowLine from '../ui/YellowLine';
+import { useTranslations } from 'next-intl';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 import shades from '../../../public/images/landing/road/shades.svg';
 import vector1 from '../../../public/images/landing/road/Vector1.svg';
@@ -18,18 +22,22 @@ function RoadStep({
   decoration,
   decorationClass = '',
   extra,
+  isVisible,
+  delay,
 }: {
-  icon: any;
+  icon: string;
   title: string;
   description: string;
-  decoration?: any;
+  decoration?: string;
   decorationClass?: string;
-  extra?: any;
+  extra?: string;
+  isVisible: boolean;
+  delay: string;
 }) {
   return (
     <div
-      className='relative flex flex-col items-center justify-center bg-white border border-[#afafaf3b] rounded-full
-    w-44 h-44 md:w-[200px] md:h-[200px] lg:w-[232px] lg:h-[232px] text-center p-4'
+      className={`relative flex flex-col items-center justify-center bg-white border border-[#afafaf3b] rounded-full
+    w-44 h-44 md:w-[200px] md:h-[200px] lg:w-[232px] lg:h-[232px] text-center p-4 scroll-hidden ${isVisible ? `animate-zoomIn ${delay}` : ''}`}
     >
       {/* خط تزئینی */}
       {decoration && (
@@ -59,10 +67,14 @@ function RoadStep({
 }
 
 export default function Road() {
+  const t = useTranslations('HomePage.Road');
+  const { ref: sectionRef, isVisible: sectionVisible } =
+    useScrollAnimation<HTMLElement>({ threshold: 0.1 });
   return (
     <section
+      ref={sectionRef}
       id='road'
-      className='relative bg-[#0065b5] md:rounded-2xl my-10 md:my-32 px-5 py-8 max-w-6xl 2xl:max-w-7xl mx-auto pb-10 -z-20'
+      className={`relative bg-[#0065b5] md:rounded-2xl my-10 md:my-32 px-5 py-8 max-w-6xl 2xl:max-w-7xl mx-auto pb-10 -z-20 scroll-hidden ${sectionVisible ? 'animate-fadeScale' : ''}`}
     >
       {/* تصویر بک‌گراند با opacity */}
       <div
@@ -71,10 +83,10 @@ export default function Road() {
       />
 
       {/* عنوان */}
-      <div className='flex flex-col items-center gap-1'>
-        <h2 className='text-headers-h4 text-white font-bold'>
-          مسیر مهاجرت شما با ما
-        </h2>
+      <div
+        className={`flex flex-col items-center gap-1 scroll-hidden ${sectionVisible ? 'animate-slideUp delay-200' : ''}`}
+      >
+        <h2 className='text-headers-h4 text-white font-bold'>{t('title')}</h2>
         <YellowLine />
       </div>
 
@@ -86,32 +98,40 @@ export default function Road() {
             <div className='grid grid-cols-2 md:grid-cols-4 gap-x-7 gap-y-3 md:gap-0 place-items-center md:px-12 w-full relative'>
               <RoadStep
                 icon={vector1}
-                title='پرواز و استقرار کامل'
-                description='کمک به اسکان کامل و انجام امور قانونی در کشور مقصد.'
+                title={t('step4.title')}
+                description={t('step4.description')}
                 decoration={line1}
                 decorationClass='-top-28 2xl:-top-24 2xl:-left-8 -left-5'
                 extra={airplan}
+                isVisible={sectionVisible}
+                delay='delay-300'
               />
               <RoadStep
                 icon={vector2}
-                title='جمع‌آوری و تکمیل مدارک'
-                description='راهنمایی برای جمع‌آوری مدارک، ترجمه، مصاحبه‌ها'
+                title={t('step3.title')}
+                description={t('step3.description')}
                 decoration={line2}
                 decorationClass='-top-10 lg:min-w-[115%] 2xl:min-w-[130%]'
+                isVisible={sectionVisible}
+                delay='delay-400'
               />
               <RoadStep
                 icon={vector3}
-                title='شروع پروسه'
-                description='اختصاص یک نیروی پرونده در کنار تحقیق و توسعه'
+                title={t('step2.title')}
+                description={t('step2.description')}
                 decoration={line2}
                 decorationClass='-top-10 lg:min-w-[115%] 2xl:min-w-[130%]'
+                isVisible={sectionVisible}
+                delay='delay-500'
               />
               <RoadStep
                 icon={vector4}
-                title='مشاوره اولیه'
-                description='از طریق تماس، چت آنلاین سایت یا شبکه‌های اجتماعی'
+                title={t('step1.title')}
+                description={t('step1.description')}
                 decoration={line2}
                 decorationClass='-top-10 lg:min-w-[115%] 2xl:min-w-[130%]'
+                isVisible={sectionVisible}
+                delay='delay-600'
               />
             </div>
           </div>

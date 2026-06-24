@@ -1,24 +1,17 @@
 'use client';
 import { useState, useRef } from 'react';
-
-const faqData = [
-  {
-    q: 'پرستارشو چه خدماتی ارائه میده؟',
-    a: 'ما خدمات مشاوره، اعزام پرستار به آلمان، و پشتیبانی کامل ارائه می‌کنیم.',
-  },
-  {
-    q: 'آیا قرارداد رسمی داریم؟',
-    a: 'بله، تمام فرآیندها با قرارداد معتبر و رسمی انجام می‌شن.',
-  },
-  {
-    q: 'مراحل اعزام چقدر طول می‌کشه؟',
-    a: 'بسته به شرایط هر فرد، بین ۳ تا ۶ ماه زمان‌بر خواهد بود.',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Questions() {
+  const t = useTranslations('HomePage.Questions');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const contentRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  const faqData = [
+    { q: t('q1'), a: t('a1') },
+    { q: t('q2'), a: t('a2') },
+    { q: t('q3'), a: t('a3') },
+  ];
 
   const toggle = (idx: number) => {
     setOpenIndex(prev => (prev === idx ? null : idx));
@@ -43,7 +36,9 @@ export default function Questions() {
 
             {/* جواب */}
             <div
-              ref={el => (contentRefs.current[idx] = el)}
+              ref={el => {
+                contentRefs.current[idx] = el;
+              }}
               style={{
                 maxHeight: isOpen
                   ? `${contentRefs.current[idx]?.scrollHeight || 0}px`

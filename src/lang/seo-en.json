@@ -1,30 +1,30 @@
 {
   "layout": {
     "title": {
-      "default": "ParastarSho | Nursing Migration & Job Opportunities",
-      "template": "ParastarSho | %s"
+      "default": "Easy migration | Nursing Migration & Job Opportunities",
+      "template": "Easy migration | %s"
     },
-    "description": "ParastarSho helps nurses migrate to Germany for work. We provide job opportunities, contracts, and professional support.",
+    "description": "Easy migration helps nurses migrate to Germany for work. We provide job opportunities, contracts, and professional support.",
     "openGraph": {
-      "title": "ParastarSho | Nursing Migration to Germany",
-      "description": "Simplify your nursing migration to Germany with ParastarSho."
+      "title": "Easy migration | Nursing Migration to Germany",
+      "description": "Simplify your nursing migration to Germany with Easy migration."
     },
     "twitter": {
-      "title": "ParastarSho | Nursing Migration",
+      "title": "Easy migration | Nursing Migration",
       "description": "Job opportunities and migration services for nurses to Germany"
     }
   },
   "home": {
     "title": "Home",
-    "description": "ParastarSho helps nurses migrate to Germany for work, study, and travel."
+    "description": "Easy migration helps nurses migrate to Germany for work, study, and travel."
   },
   "about": {
     "title": "About Us",
-    "description": "Learn about ParastarSho's experience and services for nursing migration to Germany."
+    "description": "Learn about Easy migration's experience and services for nursing migration to Germany."
   },
   "contact": {
     "title": "Contact Us",
-    "description": "Get in touch with ParastarSho for nursing migration consultation and support."
+    "description": "Get in touch with Easy migration for nursing migration consultation and support."
   },
   "blog": {
     "title": "Blog",

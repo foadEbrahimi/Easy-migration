@@ -1,31 +1,32 @@
 'use client';
 
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 
 const links = [
-  { id: 1, label: 'خانه', href: '/' },
-  { id: 2, label: 'خدمات', href: '/services' },
-  { id: 3, label: 'تماس با ما', href: '/contact' },
-  { id: 4, label: 'درباره ما', href: '/about' },
-  { id: 5, label: 'وبلاگ', href: '/blog' },
+  { id: 1, translateSlug: 'home', href: '/' },
+  // { id: 2, translateSlug: 'services', href: '/services' },
+  { id: 3, translateSlug: 'contact-us', href: '/contact' },
+  { id: 4, translateSlug: 'about-us', href: '/about' },
+  { id: 5, translateSlug: 'blog', href: '/blog' },
 ];
 
 export default function Links() {
   const pathname = usePathname();
-  console.log(pathname);
-
+  const t = useTranslations('HomePage.Navbar.links');
+  const lang = useLocale();
   return (
     <ul className='hidden md:flex items-center gap-11'>
       {links.map(link => (
         <Link
           className={`listItem !text-body-2 font-semibold ${
-            pathname === link.href ? 'active' : ''
+            pathname === `/${lang}${link.href}` ? 'active' : ''
           }`}
-          href={link.href}
+          href={`/${lang}${link.href}`}
           key={link.id}
         >
-          {link.label}
+          {t(link.translateSlug)}
         </Link>
       ))}
     </ul>
