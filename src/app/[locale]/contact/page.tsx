@@ -1,30 +1,24 @@
-import YellowLine from '@/components/ui/YellowLine';
-import Info from './_components/Info';
-import Form from './_components/Form';
+import { Metadata } from 'next';
+import seoEn from '@/lang/seo-en.json';
+import seoFa from '@/lang/seo-fa.json';
+import ContactClient from './ContactClient';
 
-export const metadata = {
-  title: 'ارتباط ما',
+const seoData = { en: seoEn, fa: seoFa };
+
+type Props = {
+  params: Promise<{ locale: string }>;
 };
 
-export default function page() {
-  return (
-    <div className='mx-auto my-5 max-w-6xl px-5 2xl:max-w-7xl'>
-      <div
-        id='contact-img'
-        className='rounded-2xl h-[170px] animate-fadeInUp md:h-[300px] flex-col w-full p-2 flex items-center justify-center'
-      >
-        <h1 className='md:text-headers-h2 text-headers-h4 animate-fadeInUp delay-1000 font-bold text-white'>
-          تماس با ما
-        </h1>
-        <YellowLine />
-        <span className='md:text-body-4 animate-fadeInUp delay-1000 text-center text-body-5 mt-4 text-white bg-[#FFFFFF]/40 px-5 py-2 rounded-lg'>
-          اگر سوالی داشتید خوشحال می شویم که به شما کمک و راهنمایی کنیم
-        </span>
-      </div>
-      <div className='my-20 animate-fadeInDown delay-500 duration-1000 md:my-40 flex flex-col gap-20 md:flex-row justify-between'>
-        <Info />
-        <Form />
-      </div>
-    </div>
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const seo = seoData[locale as keyof typeof seoData] || seoEn;
+  return {
+    title: seo.contact.title,
+    description: seo.contact.description,
+  };
+}
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  return <ContactClient />;
 }
