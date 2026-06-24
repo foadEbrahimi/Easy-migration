@@ -1,0 +1,196 @@
+{
+  "HomePage": {
+    "Navbar": {
+      "links": {
+        "home": "Home",
+        "services": "Services",
+        "contact-us": "Contact us",
+        "about-us": "About us",
+        "blog": "Blog"
+      },
+      "contact": {
+        "title": "Call for advice"
+      },
+      "logo": {
+        "text1": "Migration",
+        "text2": "Made Easy"
+      },
+      "sideMenuContact": "Call for advice"
+    },
+    "Hero": {
+      "title": "We help you turn your <span class='text-[#f6cb32]'>dream</span> into reality",
+      "subTitle": "We offer complete immigration and visa services for you as a nurse for travel, study and work migration to Germany.",
+      "btn1": "Contact us",
+      "btn2": "Our services"
+    },
+    "Services": {
+      "title": "Our Services",
+      "subtitle": "Choose the service you need from our list",
+      "card1": {
+        "number": "01",
+        "title": "Student Visa"
+      },
+      "card2": {
+        "number": "02",
+        "title": "Work Visa"
+      },
+      "card3": {
+        "number": "03",
+        "title": "Tourist Visa"
+      },
+      "card4": {
+        "number": "04",
+        "title": "Permanent Residence"
+      }
+    },
+    "Road": {
+      "title": "Your immigration journey with us",
+      "step1": {
+        "title": "Initial Consultation",
+        "description": "Via phone call, website live chat, or social networks"
+      },
+      "step2": {
+        "title": "Start the Process",
+        "description": "Assigning a case officer along with research and development"
+      },
+      "step3": {
+        "title": "Document Collection",
+        "description": "Guidance for collecting documents, translation, interviews"
+      },
+      "step4": {
+        "title": "Flight and Settlement",
+        "description": "Assistance with full accommodation and legal procedures in the destination country."
+      }
+    },
+    "WhyGerman": {
+      "title": "Why choose Germany for immigration?",
+      "features": {
+        "economy": "Strong economy and dynamic job market",
+        "education": "Free education and excellent educational system",
+        "residence": "Long-term residence and citizenship opportunity",
+        "quality": "Quality of life and welfare services"
+      },
+      "stat": {
+        "number": "+40 K",
+        "text": "Satisfied Iranian immigrants in Germany"
+      }
+    },
+    "WhyUs": {
+      "subtitle": "With you every step of the way",
+      "title": "Why should you choose us?",
+      "description": "The Road Immigration Visa Consulting Center has been established to provide superior services with a unique design in the world of education and immigration, independent of educational institutions from around the world, with the fastest visa form processing by expert immigration agents.",
+      "feature1": {
+        "title": "Professional Team",
+        "description": "Financial consulting plays a guiding role for managers and business owners."
+      },
+      "feature2": {
+        "title": "24/7 Support",
+        "description": "We provide experts at your service 24 hours a day to solve your problems."
+      }
+    },
+    "Vblog": {
+      "subtitle": "Latest News",
+      "title": "Educational Articles on This Topic"
+    },
+    "VblogCard": {
+      "date": "Nov 28, 2025",
+      "title": "The easiest immigration method established",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "readMore": "Show more"
+    },
+    "Faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "Questions": {
+      "q1": "What services does ParastarSho offer?",
+      "a1": "We provide consulting, nurse dispatch to Germany, and full support services.",
+      "q2": "Do we have an official contract?",
+      "a2": "Yes, all processes are carried out with a valid and official contract.",
+      "q3": "How long does the dispatch process take?",
+      "a3": "Depending on each person's conditions, it will take between 3 to 6 months."
+    },
+    "FeedBack": {
+      "subtitle": "What our clients say about us?",
+      "title": "Experience of working with us from the words of our successful clients"
+    },
+    "FeedbackCard": {
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "author": "Elisa Zinabi",
+      "profession": "Nursing Germany"
+    }
+  },
+  "About": {
+    "metaTitle": "About us",
+    "title": "About us",
+    "experienceLabel": "25+ years of experience",
+    "subtitle": "We are always with you ..",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "contactLabel": "Call for advice"
+  },
+  "Contact": {
+    "metaTitle": "Contact us",
+    "title": "Contact us",
+    "subtitle": "If you have any questions, we would be happy to help and guide you.",
+    "infoTitle": "Contact us",
+    "infoHeading": "Consultation on how to choose immigration and essential steps for continuing your life path",
+    "infoDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "officeAddress": "Office Address",
+    "addressValue": "Tehran, Aghdasieh, Shohada Square, Plaque 14",
+    "supportPhone": "Support Phone Number"
+  },
+  "ContactForm": {
+    "subtitle": "If you have any questions, we would be happy to help and guide you.",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Phone Number",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Full Name",
+    "commentLabel": "Comments / Description",
+    "commentPlaceholder": "Description",
+    "submitBtn": "Send Message"
+  },
+  "Blog": {
+    "metaTitle": "Blog",
+    "home": "Home",
+    "blog": "Blog",
+    "searchPlaceholder": "Search",
+    "showMore": "Show more"
+  },
+  "BlogDetail": {
+    "metaTitle": "Blog",
+    "home": "Home",
+    "blog": "Blog",
+    "backToBlog": "Back to blog",
+    "author": "Author",
+    "publishedDate": "Published Date",
+    "relatedPosts": "Related Posts",
+    "noPosts": "No posts found",
+    "tags": "Tags",
+    "share": "Share",
+    "comments": "Comments",
+    "reply": "Reply",
+    "leaveComment": "Leave a Comment",
+    "submitComment": "Submit Comment",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourComment": "Your Comment"
+  },
+  "Footer": {
+    "logo": {
+      "text1": "Migration",
+      "text2": "Made Easy"
+    },
+    "quickAccess": "Quick Access",
+    "links": {
+      "services": "Services",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "reviews": "Customer Reviews"
+    },
+    "contact": {
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "copyright": "Design and development by Foad Ebrahimi"
+  }
+}
