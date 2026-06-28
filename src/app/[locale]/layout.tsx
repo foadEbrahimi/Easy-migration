@@ -10,7 +10,7 @@ export const peyda = localFont({
       style: 'normal',
     },
     {
-      path: '../../../public/font/Peyda-extralight.ttf',
+      path: '../../../public/font/peyda-extralight.ttf',
       weight: '200',
       style: 'normal',
     },
