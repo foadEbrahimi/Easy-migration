@@ -15,7 +15,7 @@ export const peyda = localFont({
       style: 'normal',
     },
     {
-      path: '../../../public/font/Peyda-light.ttf',
+      path: '../../../public/font/peyda-light.ttf',
       weight: '300',
       style: 'normal',
     },
