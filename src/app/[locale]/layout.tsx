@@ -4,9 +4,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { peyda } from '@/font';
 import './globals.css';
 
-import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import LoadingOverlay from '@/components/layout/LoadingOverlay';
+import Navbar from '@/components/layout/Navbar';
 import { LoadingProvider } from '@/contexts/LoadingContext';
 
 import seoEn from '@/lang/seo-en.json';
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: 'website',
       locale: locale === 'fa' ? 'fa_IR' : 'en_US',
-      url: 'https://parastarsho.com',
+      url: 'https://easy-migration.vercel.app',
       siteName: 'ParastarSho',
       title: layout.openGraph.title,
       description: layout.openGraph.description,
