@@ -20,6 +20,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function BlogDetailPage({ params }: Props) {
+export default async function BlogDetailPage() {
   return <BlogDetailClient />;
 }
