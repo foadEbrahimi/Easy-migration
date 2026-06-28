@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Instagram, Send, MessageCircle, Facebook } from 'lucide-react';
+import { Send, MessageCircle } from 'lucide-react';
 
 export default function BlogShare() {
   const t = useTranslations('BlogDetail');
@@ -13,12 +13,12 @@ export default function BlogShare() {
       </div>
 
       <div className='flex items-center gap-3'>
-        <a className='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer'>
+        {/* <a className='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer'>
           <Instagram size={20} />
         </a>
         <a className='w-11 h-11 rounded-full bg-[#F4C430] text-white flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer'>
           <Facebook size={20} />
-        </a>
+        </a> */}
         <a className='w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer'>
           <Send size={20} />
         </a>
